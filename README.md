@@ -47,4 +47,4 @@ Recognition is executed by the function <b>who_is_it()</b>, this function compar
 
 ### 4. Final output
 
-<p align="center"><img src="https://user-images.githubusercontent.com/24521991/33220524-f4419e1a-d183-11e7-8f0f-b89f06f0d383.png" width="500"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/24521991/33221651-0cc5f44c-d18c-11e7-921b-ec5710aa2b7a.png" width="500"></p>
