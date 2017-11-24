@@ -3,6 +3,8 @@ Face verification and recognition using a pre-trained <a href="https://arxiv.org
 
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33219663-8e0487de-d17e-11e7-86ff-0312ef3970a8.png" width="700"></p>
 
+<br/>
+
 ### 1. Database
 The database are my classmates from Tsinghua University:
 
@@ -28,7 +30,7 @@ If you want to have your own database just need to add your own face images (96x
 ```
 
 ### 2. Face Verification
-Face verification verifies the input face ("alvaro_0.jpg") encoding vector corresponds to the provided name ("alvaro") database member encoding vector: 
+Face verification verifies the input face ("alvaro_0.jpg") encoding vector corresponds (distance < threashold) to the provided name ("alvaro") database member encoding vector: 
 
 ```python
 76. verify("images/alvaro_0.jpg", "alvaro", database, FRmodel)
