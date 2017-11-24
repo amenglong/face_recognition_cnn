@@ -43,7 +43,7 @@ Recognition is executed by the function <b>who_is_it()</b>, this function compar
 106. who_is_it("images/alvaro_0.jpg", database, FRmodel)
 ```
 
-<p align="center"><img src="https://user-images.githubusercontent.com/24521991/33220185-477b33b4-d181-11e7-9752-cbd6e6792aef.png" width="800"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/24521991/33221634-f4b4fb3c-d18b-11e7-9604-a9e488d98ed6.png" width="800"></p>
 
 ### 4. Final output
 
