@@ -33,6 +33,7 @@ If you want to have your own database just need to add your own face images (96x
 Face verification verifies the input face ("alvaro_0.jpg") encoding vector corresponds (distance < threashold) to the provided name ("alvaro") database member encoding vector: 
 
 ```python
+# fr.py
 76. verify("images/alvaro_0.jpg", "alvaro", database, FRmodel)
 ```
 
@@ -42,6 +43,7 @@ Face verification verifies the input face ("alvaro_0.jpg") encoding vector corre
 Face recognition compares the input face ("alvaro_0.jpg") encoding vector with all database members encoding vector, chosing the one with the minimum distance between vectors:
 
 ```python
+# fr.py
 106. who_is_it("images/alvaro_0.jpg", database, FRmodel)
 ```
 
