@@ -34,7 +34,7 @@ Verification is executed by the function <b>verify()</b>, this function compares
 76. verify("images/alvaro_0.jpg", "alvaro", database, FRmodel)
 ```
 
-<p align="center"><img src="https://user-images.githubusercontent.com/24521991/33220117-e2442cda-d180-11e7-8546-30327ebff1a6.png" width="700"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/24521991/33221585-908bef08-d18b-11e7-903b-330a73195b64.png" width="700"></p>
 
 ### 3. Recognition
 Recognition is executed by the function <b>who_is_it()</b>, this function compares the input image (in our case "alvaro_0.jpg") with the whole database choosing the member with the minimum distance:
