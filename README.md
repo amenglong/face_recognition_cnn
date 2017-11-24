@@ -1,5 +1,5 @@
 # Face recognition cnn
-Face verification and recognition using <a href="https://arxiv.org/pdf/1503.03832.pdf">FaceNet</a> deep convolutional neural network:
+Face verification and recognition using a pre-trained <a href="https://arxiv.org/pdf/1503.03832.pdf">FaceNet</a> deep convolutional neural network:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33219663-8e0487de-d17e-11e7-86ff-0312ef3970a8.png" width="700"></p>
 
@@ -8,7 +8,7 @@ The database are my classmates from Tsinghua University:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33219850-b0b2a51c-d17f-11e7-8ebb-e938e3272bf4.PNG" width="500"></p>
 
-If you want to have your own database just need to add face images (96x96) to the <b>/images</b> folder. Then modify below lines of code:
+If you want to have your own database just need to add your own face images (96x96) to the <b>/images</b> folder. Then modify below lines of code accordingly:
 
 ```python
 # fr.py
@@ -37,7 +37,7 @@ Verification is executed by the function <b>verify()</b>, this function compares
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33220117-e2442cda-d180-11e7-8546-30327ebff1a6.png" width="700"></p>
 
 ### 3. Recognition
-Recognition is executed by the function <b>who_is_it()</b>, this function compares the input image (in our case "alvaro_0.jpg") with all the database members choosing the member with the minimum distance:
+Recognition is executed by the function <b>who_is_it()</b>, this function compares the input image (in our case "alvaro_0.jpg") with the whole database choosing the member with the minimum distance:
 
 ```python
 106. who_is_it("images/alvaro_0.jpg", database, FRmodel)
