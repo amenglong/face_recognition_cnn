@@ -27,8 +27,8 @@ If you want to have your own database just need to add your own face images (96x
 56. database["linda"] = img_to_encoding("images/linda.jpg", FRmodel)
 ```
 
-### 2. Verification
-Verification is executed by the function <b>verify()</b>, this function compares the input image (in our case "alvaro_0.jpg") witn the database member with the name you provide (in our case "alvaro"):
+### 2. Face Verification
+Face verification verifies the face ("alvaro_0.jpg") corresponds to the name ("alvaro") provided: 
 
 ```python
 76. verify("images/alvaro_0.jpg", "alvaro", database, FRmodel)
@@ -36,8 +36,8 @@ Verification is executed by the function <b>verify()</b>, this function compares
 
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33221585-908bef08-d18b-11e7-903b-330a73195b64.png" width="700"></p>
 
-### 3. Recognition
-Recognition is executed by the function <b>who_is_it()</b>, this function compares the input image (in our case "alvaro_0.jpg") with the whole database choosing the member with the minimum distance:
+### 3. Face Recognition
+Face recognition compares the face ("alvaro_0.jpg") with the whole database choosing the member with the minimum distance:
 
 ```python
 106. who_is_it("images/alvaro_0.jpg", database, FRmodel)
