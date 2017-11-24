@@ -3,18 +3,12 @@ Face verification and recognition using <a href="https://arxiv.org/pdf/1503.0383
 
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33219663-8e0487de-d17e-11e7-86ff-0312ef3970a8.png" width="700"></p>
 
-## Notes
-### Input image
-<ul>
-  <li>Size 96x96</li>
-  <li>Saved in <b>/images</b> folder</li>
-</ul>
-
-## How does it work?
 ### 1. Database
-In <b>/images</b> folder pull a database with face images. For this case the database are my classmates from Tsinghua University:
+The database are my classmates from Tsinghua University:
 
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33219850-b0b2a51c-d17f-11e7-8ebb-e938e3272bf4.PNG" width="500"></p>
+
+If you want to have your own database just need to add face images (96x96) to the <b>/images</b> folder. Then modify below lines of code:
 
 ```python
 # fr.py
@@ -34,6 +28,7 @@ In <b>/images</b> folder pull a database with face images. For this case the dat
 ```
 
 ### 2. Verification
+Verification is executed by the function <b>verify()</b>, this function compares the input image (in our case "alvaro_0.jpg") witn the database member with the name you provide (in our case "alvaro"):
 
 ```python
 76. verify("images/alvaro_0.jpg", "alvaro", database, FRmodel)
@@ -42,6 +37,7 @@ In <b>/images</b> folder pull a database with face images. For this case the dat
 <p align="center"><img src="https://user-images.githubusercontent.com/24521991/33220117-e2442cda-d180-11e7-8546-30327ebff1a6.png" width="700"></p>
 
 ### 3. Recognition
+Recognition is executed by the function <b>who_is_it()</b>, this function compares the input image (in our case "alvaro_0.jpg") with all the database members choosing the member with the minimum distance:
 
 ```python
 106. who_is_it("images/alvaro_0.jpg", database, FRmodel)
